@@ -1,0 +1,61 @@
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border:none;border-color:#aabcfe;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
+.tg .tg-zv4m{border-color:#ffffff;text-align:left;vertical-align:top}
+.tg .tg-q2ja{background-color:#D2E4FC;border-color:#ffffff;text-align:left;vertical-align:top}
+.tg .tg-7m2w{background-color:#D2E4FC;border-color:#ffffff;text-align:center;vertical-align:top}
+.tg .tg-wp8o{border-color:#000000;text-align:center;vertical-align:top}
+.tg .tg-73oq{border-color:#000000;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-73oq">Condizioni</th>
+    <th class="tg-73oq">CE</th>
+    <th class="tg-73oq">Valide</th>
+    <th class="tg-73oq">CE</th>
+    <th class="tg-wp8o">Non valide</th>
+  </tr>
+  <tr>
+    <td class="tg-zv4m">row e' un array di stringhe</td>
+    <td class="tg-7m2w"><br>CE1</td>
+    <td class="tg-zv4m">row contiene solo stringhe<br></td>
+    <td class="tg-q2ja"><br>CE2</td>
+    <td class="tg-zv4m">row non contiene solo stringhe</td>
+  </tr>
+  <tr>
+    <td class="tg-zv4m">elemtypes e' un array di stringhe</td>
+    <td class="tg-q2ja"><br>CE3</td>
+    <td class="tg-zv4m">elemtypes contiene solo stringhe</td>
+    <td class="tg-q2ja"><br>CE4</td>
+    <td class="tg-zv4m">elemtypes non contiene solo stringhe</td>
+  </tr>
+  <tr>
+    <td class="tg-zv4m">row e' un array non vuoto</td>
+    <td class="tg-q2ja">CE5</td>
+    <td class="tg-zv4m">row e' un array non vuoto</td>
+    <td class="tg-q2ja">CE6</td>
+    <td class="tg-zv4m">row e' un array vuoto</td>
+  </tr>
+  <tr>
+    <td class="tg-zv4m"><br>elemtypes&nbsp;&nbsp;e' un array non vuoto</td>
+    <td class="tg-q2ja">CE7</td>
+    <td class="tg-zv4m">elemtypes e' un array non vuoto</td>
+    <td class="tg-q2ja">CE8</td>
+    <td class="tg-zv4m">elemtypes e' un array non vuoto</td>
+  </tr>
+  <tr>
+    <td class="tg-zv4m">elemtypes e row contengono lo stesso numero di elementi</td>
+    <td class="tg-q2ja">CE9</td>
+    <td class="tg-zv4m">len(elemtypes) == len(row)</td>
+    <td class="tg-q2ja">CE10</td>
+    <td class="tg-zv4m">en(elemtypes) != len(row)</td>
+  </tr>
+  <tr>
+    <td class="tg-zv4m">elemtypes contiene elementi dell'insieme {"INT", "DOUBLE", "DATE", "VARCHAR(256)"}</td>
+    <td class="tg-q2ja">CE11</td>
+    <td class="tg-zv4m">elemtypes contiene elementi dell'insieme</td>
+    <td class="tg-q2ja">CE12</td>
+    <td class="tg-zv4m">elemtypes non contiene elementi dell'insieme</td>
+  </tr>
+</table>
