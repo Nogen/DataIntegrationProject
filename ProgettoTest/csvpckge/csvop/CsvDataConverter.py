@@ -33,8 +33,6 @@ class CsvDataConverter:
         """
         str = ""
         for i in range(len(self.row)):
-            try:
+            if(self.elmtype[i] in CsvDataConverter.MAP):
                 str += CsvDataConverter.MAP[self.elmtype[i]](self.row[i]) + ","
-            except KeyError:
-                pass
         return str[:-1]
