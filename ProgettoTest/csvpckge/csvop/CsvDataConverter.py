@@ -1,4 +1,4 @@
-from util import strFilter
+from csvpckge.util import strFilter
 
 class CsvDataConverter:
 

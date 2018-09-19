@@ -4,7 +4,6 @@ from csvpckge import Dao
 from csvpckge import CsvDataConverter
 import sqlite3
 
-
 csvname = "Db_creato.csv"
 dbname = "prova.db"
 tablename = "DbTot"

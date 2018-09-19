@@ -1,5 +1,5 @@
 import re
-from util import strFilter
+from csvpckge.util import strFilter
 
 
 class Csv2Obj:
