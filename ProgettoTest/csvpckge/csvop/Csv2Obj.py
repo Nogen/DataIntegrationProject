@@ -1,13 +1,14 @@
 import re
 from csvpckge.util import strFilter
+from csvpckge.util import DataTypes
 
 
 class Csv2Obj:
 
-    binding = { "0^[-]?[0-9]+$" : "INT",
-            "1^[-]?[0-9]+([,]|[.])[0-9]+$" : "DOUBLE",
-            "3^([0-9]{4}|[0-9]{2})[-/][0-9]{2}[-/]([0-9]{2}|[0-9]{4})$" : "DATE",
-            "2.+" : "VARCHAR(256)" }
+    binding = { "0^[-]?[0-9]+$" : DataTypes.Int,
+            "1^[-]?[0-9]+([,]|[.])[0-9]+$" : DataTypes.Double,
+            "3^([0-9]{4}|[0-9]{2})[-/][0-9]{2}[-/]([0-9]{2}|[0-9]{4})$" : DataTypes.Date,
+            "2.+" : DataTypes.Text }
 
     def __init__(self, csvname, delimiter=","):
         self.csvname = csvname

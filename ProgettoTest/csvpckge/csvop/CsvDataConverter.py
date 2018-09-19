@@ -1,13 +1,14 @@
 from csvpckge.util import strFilter
+from csvpckge.util import DataTypes
 
 class CsvDataConverter:
 
     TIME = " 23:12:18"
     NULL = "NULL"
-    MAP = {"INT" : (lambda x: strFilter(x).sanitizeDouble()  or CsvDataConverter.NULL),
-            "DOUBLE" : (lambda x: strFilter(x).sanitizeDouble()  or CsvDataConverter.NULL) ,
-             "DATE" : (lambda x: x + CsvDataConverter.TIME),
-             "VARCHAR(256)" : (lambda x:  "\"" +  strFilter(x, "\"").sanitize() + "\"")
+    MAP = {DataTypes.Int : (lambda x: strFilter(x).sanitizeDouble()  or CsvDataConverter.NULL),
+            DataTypes.Double : (lambda x: strFilter(x).sanitizeDouble()  or CsvDataConverter.NULL) ,
+            DataTypes.Date : (lambda x: x + CsvDataConverter.TIME),
+             DataTypes.Text : (lambda x:  "\"" +  strFilter(x, "\"").sanitize() + "\"")
     }
 
 

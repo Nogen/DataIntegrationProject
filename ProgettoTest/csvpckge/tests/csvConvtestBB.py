@@ -34,7 +34,3 @@ class TestCsvConverter(unittest.TestCase):
         conv = CsvDataConverter(row, elemtypes)
         final = "%s,\"%s\",%s,%s%s" % (row[0], row[1], row[2], row[3], CsvDataConverter.TIME)
         self.assertEqual(conv.values2Query(), final)
-
-if __name__ == "__main__":
-    suite = unittest.TestLoader().loadTestsFromTestCase(TestCsvConverter)
-    unittest.TextTestRunner(verbosity=2).run(suite)
