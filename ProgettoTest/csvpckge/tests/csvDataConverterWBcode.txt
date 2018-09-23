@@ -1,0 +1,23 @@
+def values2Query(self):
+      str = ""                                                  #1
+      int i = 0
+      while (i < len(self.row)):                                #2
+          if(self.elmtype[i] in CsvDataConverter.MAP):          #3
+              if (self.elemtype[i] == "INT"):                   #4
+                if (self.row[i]):                               #5
+                  str +=                                        #6
+                else: str +=                                    #7
+              elif (self.elemtype[i] == "DOUBLE"):              #8
+                if (self.row[i]):                               #9
+                  str +=                                        #10
+                else: str +=                                    #11
+              elif (self.elemtype[i] == "DATE"):                #12
+                if (self.row[i]):                               #13
+                  str +=                                        #14
+                else: str +=                                    #15
+              elif(self.elemtype[i] == "VARCHAR(256)"):         #16
+                if (self.row[i]):                               #17
+                  str +=                                        #18
+                else: str +=                                    #19
+         i++                                                    #20
+      return str[:-1]                                           #21
